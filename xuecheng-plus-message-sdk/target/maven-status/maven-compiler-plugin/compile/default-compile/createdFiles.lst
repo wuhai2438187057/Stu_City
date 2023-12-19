@@ -1,0 +1,10 @@
+com\xuecheng\messagesdk\mapper\MqMessageHistoryMapper.class
+com\xuecheng\messagesdk\model\po\MqMessageHistory.class
+com\xuecheng\messagesdk\service\MqMessageHistoryService.class
+com\xuecheng\messagesdk\config\MybatisPlusConfig.class
+com\xuecheng\messagesdk\service\impl\MqMessageHistoryServiceImpl.class
+com\xuecheng\messagesdk\mapper\MqMessageMapper.class
+com\xuecheng\messagesdk\service\impl\MqMessageServiceImpl.class
+com\xuecheng\messagesdk\model\po\MqMessage.class
+com\xuecheng\messagesdk\service\MqMessageService.class
+com\xuecheng\messagesdk\service\MessageProcessAbstract.class

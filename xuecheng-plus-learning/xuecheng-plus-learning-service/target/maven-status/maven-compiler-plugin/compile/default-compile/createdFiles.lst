@@ -1,0 +1,9 @@
+com\xuecheng\learning\feignclient\MediaServiceClient.class
+com\xuecheng\learning\feignclient\MediaServiceClientFallbackFactory$1.class
+com\xuecheng\learning\mapper\XcCourseTablesMapper.class
+com\xuecheng\learning\feignclient\ContentServiceClient.class
+com\xuecheng\learning\feignclient\ContentServiceClientFallbackFactory$1.class
+com\xuecheng\learning\mapper\XcChooseCourseMapper.class
+com\xuecheng\learning\feignclient\MediaServiceClientFallbackFactory.class
+com\xuecheng\learning\config\MybatisPlusConfig.class
+com\xuecheng\learning\feignclient\ContentServiceClientFallbackFactory.class

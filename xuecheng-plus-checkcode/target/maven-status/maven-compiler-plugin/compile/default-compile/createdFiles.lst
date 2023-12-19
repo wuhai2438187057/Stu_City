@@ -1,0 +1,16 @@
+com\xuecheng\checkcode\CheckcodeApplication.class
+com\xuecheng\checkcode\service\CheckCodeService$CheckCodeGenerator.class
+com\xuecheng\checkcode\service\impl\RedisCheckCodeStore.class
+com\xuecheng\checkcode\service\AbstractCheckCodeService$GenerateResult.class
+com\xuecheng\checkcode\service\impl\MemoryCheckCodeStore.class
+com\xuecheng\checkcode\service\CheckCodeService$KeyGenerator.class
+com\xuecheng\checkcode\service\impl\UUIDKeyGenerator.class
+com\xuecheng\checkcode\controller\CheckCodeController.class
+com\xuecheng\checkcode\model\CheckCodeParamsDto.class
+com\xuecheng\checkcode\service\AbstractCheckCodeService.class
+com\xuecheng\checkcode\service\CheckCodeService$CheckCodeStore.class
+com\xuecheng\checkcode\service\CheckCodeService.class
+com\xuecheng\checkcode\config\KaptchaConfig.class
+com\xuecheng\checkcode\service\impl\PicCheckCodeServiceImpl.class
+com\xuecheng\checkcode\service\impl\NumberLetterCheckCodeGenerator.class
+com\xuecheng\checkcode\model\CheckCodeResultDto.class

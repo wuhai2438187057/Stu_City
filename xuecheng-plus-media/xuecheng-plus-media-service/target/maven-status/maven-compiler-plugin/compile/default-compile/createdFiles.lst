@@ -1,0 +1,15 @@
+com\xuecheng\media\service\impl\MediaFileProcessServiceImpl.class
+com\xuecheng\media\config\MybatisPlusConfig.class
+com\xuecheng\media\mapper\MqMessageHistoryMapper.class
+com\xuecheng\media\service\MediaFileProcessService.class
+com\xuecheng\media\jobhandler\SampleJob.class
+com\xuecheng\media\config\MinioConfig.class
+com\xuecheng\media\mapper\MediaProcessHistoryMapper.class
+com\xuecheng\media\mapper\MqMessageMapper.class
+com\xuecheng\media\jobhandler\VideoTask.class
+com\xuecheng\media\mapper\MediaProcessMapper.class
+com\xuecheng\media\service\impl\MediaFileServiceImpl.class
+com\xuecheng\media\config\XxlJobConfig.class
+com\xuecheng\media\service\MediaFileService.class
+com\xuecheng\media\mapper\MediaFilesMapper.class
+com\xuecheng\MedisApplication.class

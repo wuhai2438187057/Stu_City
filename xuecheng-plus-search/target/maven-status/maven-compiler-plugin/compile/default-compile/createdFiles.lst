@@ -1,0 +1,11 @@
+com\xuecheng\search\config\ElasticsearchConfig.class
+com\xuecheng\search\controller\CourseIndexController.class
+com\xuecheng\search\service\impl\CourseSearchServiceImpl.class
+com\xuecheng\search\po\CourseIndex.class
+com\xuecheng\search\service\impl\IndexServiceImpl.class
+com\xuecheng\search\controller\CourseSearchController.class
+com\xuecheng\search\service\IndexService.class
+com\xuecheng\SearchApplication.class
+com\xuecheng\search\dto\SearchCourseParamDto.class
+com\xuecheng\search\dto\SearchPageResultDto.class
+com\xuecheng\search\service\CourseSearchService.class

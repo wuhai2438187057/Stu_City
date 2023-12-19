@@ -1,0 +1,8 @@
+com\xuecheng\media\model\po\MediaFiles.class
+com\xuecheng\media\model\po\MqMessage.class
+com\xuecheng\media\model\dto\UploadFileParamsDto.class
+com\xuecheng\media\model\dto\UploadFileResultDto.class
+com\xuecheng\media\model\po\MediaProcessHistory.class
+com\xuecheng\media\model\po\MqMessageHistory.class
+com\xuecheng\media\model\dto\QueryMediaParamsDto.class
+com\xuecheng\media\model\po\MediaProcess.class

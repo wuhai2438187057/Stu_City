@@ -1,0 +1,7 @@
+com\xuecheng\learning\model\po\XcLearnRecord.class
+com\xuecheng\learning\model\po\XcChooseCourse.class
+com\xuecheng\learning\model\po\XcCourseTables.class
+com\xuecheng\learning\model\dto\MyCourseTableItemDto.class
+com\xuecheng\learning\model\dto\XcChooseCourseDto.class
+com\xuecheng\learning\model\dto\MyCourseTableParams.class
+com\xuecheng\learning\model\dto\XcCourseTablesDto.class

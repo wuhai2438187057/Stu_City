@@ -1,0 +1,5 @@
+com\xuecheng\App.class
+com\xuecheng\system\config\MybatisPlusConfig.class
+com\xuecheng\system\service\DictionaryService.class
+com\xuecheng\system\mapper\DictionaryMapper.class
+com\xuecheng\system\service\impl\DictionaryServiceImpl.class

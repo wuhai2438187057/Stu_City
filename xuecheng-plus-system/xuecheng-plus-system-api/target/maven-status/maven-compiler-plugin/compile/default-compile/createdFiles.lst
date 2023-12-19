@@ -1,0 +1,4 @@
+com\xuecheng\system\controller\DictionaryController.class
+com\xuecheng\system\config\GlobalCorsConfig.class
+com\xuecheng\system\config\LocalDateTimeConfig.class
+com\xuecheng\system\SystemApplication.class

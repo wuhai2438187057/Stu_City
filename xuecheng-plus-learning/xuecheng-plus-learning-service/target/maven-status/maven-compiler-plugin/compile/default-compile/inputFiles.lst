@@ -1,0 +1,7 @@
+D:\idea_project\学成在线\xuecheng-plus-learning\xuecheng-plus-learning-service\src\main\java\com\xuecheng\learning\feignclient\ContentServiceClient.java
+D:\idea_project\学成在线\xuecheng-plus-learning\xuecheng-plus-learning-service\src\main\java\com\xuecheng\learning\config\MybatisPlusConfig.java
+D:\idea_project\学成在线\xuecheng-plus-learning\xuecheng-plus-learning-service\src\main\java\com\xuecheng\learning\feignclient\ContentServiceClientFallbackFactory.java
+D:\idea_project\学成在线\xuecheng-plus-learning\xuecheng-plus-learning-service\src\main\java\com\xuecheng\learning\mapper\XcChooseCourseMapper.java
+D:\idea_project\学成在线\xuecheng-plus-learning\xuecheng-plus-learning-service\src\main\java\com\xuecheng\learning\feignclient\MediaServiceClientFallbackFactory.java
+D:\idea_project\学成在线\xuecheng-plus-learning\xuecheng-plus-learning-service\src\main\java\com\xuecheng\learning\feignclient\MediaServiceClient.java
+D:\idea_project\学成在线\xuecheng-plus-learning\xuecheng-plus-learning-service\src\main\java\com\xuecheng\learning\mapper\XcCourseTablesMapper.java

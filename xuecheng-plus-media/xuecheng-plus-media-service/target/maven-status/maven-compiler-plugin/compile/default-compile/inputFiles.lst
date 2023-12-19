@@ -1,0 +1,15 @@
+D:\idea_project\学成在线\xuecheng-plus-media\xuecheng-plus-media-service\src\main\java\com\xuecheng\media\mapper\MediaProcessMapper.java
+D:\idea_project\学成在线\xuecheng-plus-media\xuecheng-plus-media-service\src\main\java\com\xuecheng\media\config\MinioConfig.java
+D:\idea_project\学成在线\xuecheng-plus-media\xuecheng-plus-media-service\src\main\java\com\xuecheng\media\mapper\MqMessageMapper.java
+D:\idea_project\学成在线\xuecheng-plus-media\xuecheng-plus-media-service\src\main\java\com\xuecheng\media\jobhandler\SampleJob.java
+D:\idea_project\学成在线\xuecheng-plus-media\xuecheng-plus-media-service\src\main\java\com\xuecheng\media\mapper\MqMessageHistoryMapper.java
+D:\idea_project\学成在线\xuecheng-plus-media\xuecheng-plus-media-service\src\main\java\com\xuecheng\media\config\MybatisPlusConfig.java
+D:\idea_project\学成在线\xuecheng-plus-media\xuecheng-plus-media-service\src\main\java\com\xuecheng\media\config\XxlJobConfig.java
+D:\idea_project\学成在线\xuecheng-plus-media\xuecheng-plus-media-service\src\main\java\com\xuecheng\MedisApplication.java
+D:\idea_project\学成在线\xuecheng-plus-media\xuecheng-plus-media-service\src\main\java\com\xuecheng\media\jobhandler\VideoTask.java
+D:\idea_project\学成在线\xuecheng-plus-media\xuecheng-plus-media-service\src\main\java\com\xuecheng\media\service\MediaFileProcessService.java
+D:\idea_project\学成在线\xuecheng-plus-media\xuecheng-plus-media-service\src\main\java\com\xuecheng\media\mapper\MediaFilesMapper.java
+D:\idea_project\学成在线\xuecheng-plus-media\xuecheng-plus-media-service\src\main\java\com\xuecheng\media\service\impl\MediaFileServiceImpl.java
+D:\idea_project\学成在线\xuecheng-plus-media\xuecheng-plus-media-service\src\main\java\com\xuecheng\media\service\impl\MediaFileProcessServiceImpl.java
+D:\idea_project\学成在线\xuecheng-plus-media\xuecheng-plus-media-service\src\main\java\com\xuecheng\media\mapper\MediaProcessHistoryMapper.java
+D:\idea_project\学成在线\xuecheng-plus-media\xuecheng-plus-media-service\src\main\java\com\xuecheng\media\service\MediaFileService.java

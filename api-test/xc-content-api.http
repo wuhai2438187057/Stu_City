@@ -1,0 +1,194 @@
+###
+GET http://localhost:63040/content/course-category/tree-nodes
+
+
+###
+POST {{content_host}}/content/course/list?pageNo=1&pageSize=10
+Content-Type: application/json
+
+{
+  "auditStatus": "202004",
+  "courseName": "java",
+  "publishStatus": "203001"
+}
+
+### 创建课程
+POST {{content_host}}/content/course
+Content-Type: application/json
+
+{
+  "charge": "201000",
+  "price": 0,
+  "originalPrice":0,
+  "qq": "22333",
+  "wechat": "223344",
+  "phone": "13333333",
+  "validDays": 365,
+  "mt": "1-1",
+  "st": "1-1-1",
+  "name": "王的男人",
+  "pic": "",
+  "teachmode": "200002",
+  "users": "初级人员",
+  "tags": "",
+  "grade": "204001",
+  "description": ""
+}
+###
+GET {{content_host}}/content/course/40
+
+### 修改课程
+PUT {{content_host}}/content/course
+Content-Type: application/json
+
+{
+  "id": 40,
+  "name": "SpringBoot核心",
+  "users": "Spring Boot初学者",
+  "tags": "Spring项目的快速构建",
+  "mt": "1-3",
+  "st": "1-3-2",
+  "grade": "200003",
+  "teachmode": "201001",
+  "description": "课程系统性地深度探讨 Spring Boot 核心特性，引导小伙伴对 Java 规范的重视，启发对技术原理性的思考，掌握排查问题的技能，以及学习阅读源码的方法和技巧，全面提升研发能力，进军架构师队伍。",
+  "pic": "https://cdn.educba.com/academy/wp-content/uploads/2018/08/Spring-BOOT-Interview-questions.jpg",
+  "charge": "201001",
+  "price": 0.02
+}
+
+### 查询某个课程的课程计划
+GET {{content_host}}/content/teachplan/74/tree-nodes
+
+
+### 新增课程计划--章
+POST {{content_host}}/content/teachplan
+Content-Type: application/json
+
+{
+  "courseId" : 74,
+  "parentid": 0,
+  "grade" : 1,
+  "pname" : "新章名称[点击修改]"
+}
+
+
+### 新增课程计划--节,从数据库找到第一级的课程计划id向其下边添加计划
+POST {{content_host}}/content/teachplan
+Content-Type: application/json
+
+{
+  "courseId" : 74,
+  "parentid": 247,
+  "grade" : 2,
+  "pname" : "小节名称 [点击修改]"
+}
+
+### 删除课程计划
+DELETE {{content_host}}/content/teachplan/311
+
+###
+POST  {{content_host}}/content/courseTeacher
+Content-Type: application/json
+
+{
+  "courseId": 75,
+  "teacherName": "王老师",
+  "position": "教师职位",
+  "introduction": "教师简介"
+}
+
+###
+DELETE  {{content_host}}/content/ourseTeacher/course/28/32
+
+### 课程查询列表
+POST {{gateway_host}}/content/course/list?pageNo=2&pageSize=1
+Content-Type: application/json
+
+{
+  "auditStatus": "202002",
+  "courseName": ""
+}
+
+
+### 上传文件
+POST {{media_host}}/media/upload/coursefile
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="filedata"; filename="1.png"
+Content-Type: application/octet-stream
+
+< D:/image/0002.png
+
+### 课程发布
+POST {{content_host}}/content/coursepublish/2
+
+### 添加课程索引
+POST {{search_host}}/search/index/course
+Content-Type: application/json
+
+{
+  "charge" : "201000",
+  "companyId" : 100000,
+  "companyName" : "北京黑马程序",
+  "createDate" : "2022-09-25 09:36:11",
+  "description" : "《Spring编程思想》是2007年6月1日机械工业出版社出版的图书，作者是埃克尔，译者是陈昊鹏。主要内容本书赢得了全球程序员的广泛赞誉，即使是最晦涩的概念，在Bruce Eckel的文字亲和力和小而直接的编程示例面前也会化解于无形。从Java的基础语法到最高级特性（深入的面向对象概念、多线程、自动项目构建、单元测试和调试等），本书都能逐步指导你轻松掌握。从本书获得的各项大奖以及来自世界各地的读者评论中，不难看出这是一本经典之作",
+  "grade" : "204001",
+  "id" : 102,
+  "mt" : "1-3",
+  "mtName" : "编程开发",
+  "name" : "Spring编程思想",
+  "originalPrice" : 200.0,
+  "pic" : "/mediafiles/2022/09/20/1d0f0e6ed8a0c4a89bfd304b84599d9c.png",
+  "price" : 100.0,
+  "remark" : "没有备注",
+  "st" : "1-3-2",
+  "stName" : "Java语言",
+  "status" : "203002",
+  "tags" : "没有标签",
+  "teachmode" : "200002",
+  "validDays" : 222
+}
+
+
+### 搜索课程
+GET {{search_host}}/search/course/list?pageNo=1&keywords=spring
+Content-Type: application/json
+
+###
+POST {{auth_host}}/auth/oauth/token?client_id=XcWebApp&client_secret=XcWebApp&grant_type=authorization_code&code=2R8qCx&redirect_uri=http://www.51xuecheng.cn
+
+###
+POST {{auth_host}}/auth/oauth/token?client_id=XcWebApp&client_secret=XcWebApp&grant_type=password&username=zhangsan&password=123
+
+
+### 密码模式
+POST {{auth_host}}/auth/oauth/token?client_id=XcWebApp&client_secret=XcWebApp&grant_type=password&username=zhangsan&password=123
+
+###校验jwt令牌
+POST {{auth_host}}/auth/oauth/check_token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsieHVlY2hlbmctcGx1cyJdLCJ1c2VyX25hbWUiOiJ6aGFuZ3NhbiIsInNjb3BlIjpbImFsbCJdLCJleHAiOjE3MDI3MjI3NjcsImF1dGhvcml0aWVzIjpbInAxIl0sImp0aSI6IjNmMmNhZTYwLTI5ODMtNDIwOS1iZmExLTUyZDYwNzg0MTUxYiIsImNsaWVudF9pZCI6IlhjV2ViQXBwIn0.TWwMbJy0r6uu6aiQj6aMfljZ9S52gPtQ1zAzDuFyuas
+
+###
+GET http://localhost:63040/content/course/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsieHVlY2hlbmctcGx1cyJdLCJ1c2VyX25hbWUiOiJ6aGFuZ3NhbiIsInNjb3BlIjpbImFsbCJdLCJleHAiOjE3MDI3MjQwNjcsImF1dGhvcml0aWVzIjpbInAxIl0sImp0aSI6IjA2ODFiYzVhLTliZGEtNGZjNC04NDRjLTM0YzMyOTljZTg3YiIsImNsaWVudF9pZCI6IlhjV2ViQXBwIn0.JyWd1VHfzyfTdwgeEF01dCanbUXg5nFxdRVVAoP88fQ
+
+### 通过网关访问资源服务
+GET http://localhost:63010/content/course/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsieHVlY2hlbmctcGx1cyJdLCJ1c2VyX25hbWUiOiJ6aGFuZ3NhbiIsInNjb3BlIjpbImFsbCJdLCJleHAiOjE3MDI3MjY4ODYsImF1dGhvcml0aWVzIjpbInAxIl0sImp0aSI6IjJiNzRiYjBlLWVlMGUtNGJmNC05YmU5LTNlOWNkNjVjMDMxZCIsImNsaWVudF9pZCI6IlhjV2ViQXBwIn0.mlOl8SBM37_GSfhKVYkvyzPT3tC4mAb8EgJ-qZYub_w
+
+### 密码模式
+POST {{auth_host}}/auth/oauth/token?client_id=XcWebApp&client_secret=XcWebApp&grant_type=password&username=stu1&password=111111
+
+
+###校验jwt令牌
+POST {{auth_host}}/auth/oauth/check_token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsieHVlY2hlbmctcGx1cyJdLCJ1c2VyX25hbWUiOiJ7XCJiaXJ0aGRheVwiOlwiMjAyMi0wOS0yOFQxOToyODo0NlwiLFwiY3JlYXRlVGltZVwiOlwiMjAyMi0wOS0yOFQwODozMjowM1wiLFwiaWRcIjpcIjUwXCIsXCJuYW1lXCI6XCLlrabnlJ8xXCIsXCJuaWNrbmFtZVwiOlwi5aSn5rC054mbXCIsXCJzZXhcIjpcIjFcIixcInN0YXR1c1wiOlwiMVwiLFwidXNlcm5hbWVcIjpcInN0dTFcIixcInVzZXJwaWNcIjpcImh0dHA6Ly9maWxlLjUxeHVlY2hlbmcuY24vZGRkZlwiLFwidXR5cGVcIjpcIjEwMTAwMVwifSIsInNjb3BlIjpbImFsbCJdLCJleHAiOjE3MDI3Mjg1ODIsImF1dGhvcml0aWVzIjpbInAxIl0sImp0aSI6IjY4MDk1ZWUzLWViNWItNDdjYi05MzkxLTViNGRlNTdjMDc3NyIsImNsaWVudF9pZCI6IlhjV2ViQXBwIn0._pqxGAgyPLKESNNm5V9X7kvm0ie_2F4QYKbB2jyAaCU
+
+
+
+### 密码模式
+POST {{auth_host}}/auth/oauth/token?client_id=XcWebApp&client_secret=XcWebApp&grant_type=password&username=stu1&password=111111
+
+### 通过网关访问资源服务
+GET http://localhost:63010/content/course/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsieHVlY2hlbmctcGx1cyJdLCJ1c2VyX25hbWUiOiJ7XCJiaXJ0aGRheVwiOlwiMjAyMi0wOS0yOFQxOToyODo0NlwiLFwiY3JlYXRlVGltZVwiOlwiMjAyMi0wOS0yOFQwODozMjowM1wiLFwiaWRcIjpcIjUwXCIsXCJuYW1lXCI6XCLlrabnlJ8xXCIsXCJuaWNrbmFtZVwiOlwi5aSn5rC054mbXCIsXCJzZXhcIjpcIjFcIixcInN0YXR1c1wiOlwiMVwiLFwidXNlcm5hbWVcIjpcInN0dTFcIixcInVzZXJwaWNcIjpcImh0dHA6Ly9maWxlLjUxeHVlY2hlbmcuY24vZGRkZlwiLFwidXR5cGVcIjpcIjEwMTAwMVwifSIsInNjb3BlIjpbImFsbCJdLCJleHAiOjE3MDI3Mjk5MzksImF1dGhvcml0aWVzIjpbInAxIl0sImp0aSI6ImY4YjE4YmRmLWFiMzAtNDIxMC1hYzM0LTNiZWU1NmZiOTVlNyIsImNsaWVudF9pZCI6IlhjV2ViQXBwIn0.9DH0BKviHob1MPmnpkR3JxRBkU0DHoZI5hdG1k20eKw
+
