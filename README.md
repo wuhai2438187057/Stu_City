@@ -1,37 +1,22 @@
-# xuechengzaixian
 
 #### 介绍
 学成在线项目
 
 #### 软件架构
-软件架构说明
+微服务架构
 
-
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
 
 #### 使用说明
+只是做一个成长记录，不建议拉取，因为内容很多，还有nacos的很多配置文件并没有上传，以及用到的很多软件这里也没有
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
 
 #### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+ithanser
 
 
 #### 特技
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+<img width="960" alt="47" src="https://github.com/wuhai2438187057/Stu_City/assets/109608160/6ec16b70-8b31-4a10-b3f0-b2c1be20449c">
+<img width="954" alt="48" src="https://github.com/wuhai2438187057/Stu_City/assets/109608160/2fa3ea33-18e4-4b12-9af1-9f73305a80e3">
+<img width="954" alt="50" src="https://github.com/wuhai2438187057/Stu_City/assets/109608160/2dcc1cd9-863f-49fe-8063-1132f686dcd3">
+<img width="954" alt="49" src="https://github.com/wuhai2438187057/Stu_City/assets/109608160/a35188bd-765e-4884-9405-2e961d4c60a5">
